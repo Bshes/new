@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambach Masonry | Precision Masonry Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="brick-row"></div>
+        <div class="brick-row"></div>
+        <div class="brick-row"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <img src="assets/images/logo.svg" alt="Ambach Masonry" class="logo">
+        <ul class="nav-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#testimonials">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <video autoplay muted loop class="hero-video">
+            <source src="assets/videos/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="tagline">Building Legacy<br>Through Masonry</h1>
+            <a href="#contact" class="cta-button">Start Your Project</a>
+        </div>
+        <canvas class="particles-canvas"></canvas>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Our Expertise</h2>
+        <div class="services-grid">
+            <!-- Service cards from previous code -->
+        </div>
+    </section>
+
+    <!-- Portfolio Carousel -->
+    <section id="portfolio" class="portfolio">
+        <div class="carousel-container" id="portfolio-carousel"></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="swiper testimonials-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">"Exceptional craftsmanship..."</div>
+                <div class="swiper-slide">"Transformed our campus..."</div>
+                <!-- Add more slides -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div id="map" class="contact-map"></div>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Project Details"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
